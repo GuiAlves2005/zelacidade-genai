@@ -1,0 +1,10 @@
+{
+  "modelo_llm": "Qwen/Qwen2.5-1.5B-Instruct",
+  "modelo_emb": "intfloat/multilingual-e5-small",
+  "backend_busca": "e5",
+  "adaptador_lora": "C:\\Users\\guili\\Desktop\\zelacidade-genai\\modelos\\lora-zela",
+  "top_k": 3,
+  "max_novos_tokens": 350,
+  "semente": 42,
+  "limiar": 0.8511
+}

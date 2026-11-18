@@ -1,0 +1,9 @@
+{
+  "perguntas_identicas": 0,
+  "similaridade_max_media": 0.209,
+  "similaridade_max_maior": 0.404,
+  "par_mais_parecido": {
+    "teste": "Quanto custa solicitar o reparo de um buraco na rua?",
+    "treino": "Como funciona o conserto de um buraco na rua?"
+  }
+}

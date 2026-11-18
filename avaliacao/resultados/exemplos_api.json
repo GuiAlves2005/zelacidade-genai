@@ -1,0 +1,225 @@
+{
+  "descricao": "Respostas reais da API /perguntar (config C). Cada pergunta foi feita 3 vezes; a 1a chamada (aquecimento) foi descartada e latencia_mediana_s e a mediana das chamadas 2 e 3. resposta_api e a resposta da 2a chamada (as 3 foram identicas).",
+  "data": "2026-11-12",
+  "medicoes": [
+    {
+      "dispositivo": "GPU NVIDIA GeForce RTX 5060 Ti 8 GB (bfloat16)",
+      "saude": {
+        "status": "ok",
+        "config": "C",
+        "descricao": "RAG + LoRA (modelo especializado)",
+        "modelo": "Qwen/Qwen2.5-1.5B-Instruct+LoRA",
+        "busca": "e5",
+        "limiar": 0.8511,
+        "n_trechos": 47
+      },
+      "itens": [
+        {
+          "pergunta": "Tem um buraco enorme na minha rua, o que eu faço?",
+          "latencias_s": [
+            12.292,
+            6.482,
+            6.489
+          ],
+          "latencia_mediana_s": 6.486,
+          "saidas_identicas_nas_3": true,
+          "resposta_api": {
+            "saida": {
+              "resposta": "Para garantir a qualidade, o tapa-buraco não é feito em dias de chuva, o que pode alterar a programação. O tapa-buraco também não substitui o recapeamento da rua: se a via tem muitos buracos, o morador deve pedir o recapeamento como um serviço separado.",
+              "categoria": "buraco_via",
+              "risco": "medio",
+              "fontes": [
+                "T006"
+              ],
+              "recusou": false
+            },
+            "fontes_detalhadas": [
+              {
+                "id": "T006",
+                "titulo": "Chuva e recapeamento",
+                "orgao": "Subprefeitura Sapopemba / PMSP",
+                "url": "https://prefeitura.sp.gov.br/web/sapopemba/w/zeladoria_urbana/116576"
+              }
+            ],
+            "config": "C",
+            "recusa_por_limiar": false,
+            "latencia_s": 6.482,
+            "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+          }
+        },
+        {
+          "pergunta": "Qual o valor da multa por calçada irregular?",
+          "latencias_s": [
+            4.505,
+            4.395,
+            4.442
+          ],
+          "latencia_mediana_s": 4.418,
+          "saidas_identicas_nas_3": true,
+          "resposta_api": {
+            "saida": {
+              "resposta": "Não consta na base de conhecimento da ZelaCidade. Para esse assunto, consulte os canais oficiais da Prefeitura (SP156).",
+              "categoria": "fora_do_escopo",
+              "risco": "nao_se_aplica",
+              "fontes": [],
+              "recusou": true
+            },
+            "fontes_detalhadas": [],
+            "config": "C",
+            "recusa_por_limiar": false,
+            "latencia_s": 4.395,
+            "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+          }
+        },
+        {
+          "pergunta": "Como faço para renovar minha CNH?",
+          "latencias_s": [
+            0.009,
+            0.008,
+            0.008
+          ],
+          "latencia_mediana_s": 0.008,
+          "saidas_identicas_nas_3": true,
+          "resposta_api": {
+            "saida": {
+              "resposta": "Não consta na base de conhecimento da ZelaCidade. Para esse assunto, consulte os canais oficiais da Prefeitura (SP156).",
+              "categoria": "fora_do_escopo",
+              "risco": "nao_se_aplica",
+              "fontes": [],
+              "recusou": true
+            },
+            "fontes_detalhadas": [],
+            "config": "C",
+            "recusa_por_limiar": true,
+            "latencia_s": 0.008,
+            "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+          }
+        }
+      ]
+    },
+    {
+      "dispositivo": "CPU AMD Ryzen 5 5600X (float32, CUDA_VISIBLE_DEVICES=-1)",
+      "saude": {
+        "status": "ok",
+        "config": "C",
+        "descricao": "RAG + LoRA (modelo especializado)",
+        "modelo": "Qwen/Qwen2.5-1.5B-Instruct+LoRA",
+        "busca": "e5",
+        "limiar": 0.8511,
+        "n_trechos": 47
+      },
+      "itens": [
+        {
+          "pergunta": "Tem um buraco enorme na minha rua, o que eu faço?",
+          "latencias_s": [
+            33.495,
+            33.475,
+            33.724
+          ],
+          "latencia_mediana_s": 33.599,
+          "saidas_identicas_nas_3": true,
+          "resposta_api": {
+            "saida": {
+              "resposta": "Para garantir a qualidade, o tapa-buraco não é feito em dias de chuva, o que pode alterar a programação. O tapa-buraco também não substitui o recapeamento da rua: se a via tem muitos buracos, o morador deve pedir o recapeamento como um serviço separado.",
+              "categoria": "buraco_via",
+              "risco": "medio",
+              "fontes": [
+                "T006"
+              ],
+              "recusou": false
+            },
+            "fontes_detalhadas": [
+              {
+                "id": "T006",
+                "titulo": "Chuva e recapeamento",
+                "orgao": "Subprefeitura Sapopemba / PMSP",
+                "url": "https://prefeitura.sp.gov.br/web/sapopemba/w/zeladoria_urbana/116576"
+              }
+            ],
+            "config": "C",
+            "recusa_por_limiar": false,
+            "latencia_s": 33.475,
+            "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+          }
+        },
+        {
+          "pergunta": "Qual o valor da multa por calçada irregular?",
+          "latencias_s": [
+            25.587,
+            25.887,
+            25.947
+          ],
+          "latencia_mediana_s": 25.917,
+          "saidas_identicas_nas_3": true,
+          "resposta_api": {
+            "saida": {
+              "resposta": "Não consta na base de conhecimento da ZelaCidade. Para esse assunto, consulte os canais oficiais da Prefeitura (SP156).",
+              "categoria": "fora_do_escopo",
+              "risco": "nao_se_aplica",
+              "fontes": [],
+              "recusou": true
+            },
+            "fontes_detalhadas": [],
+            "config": "C",
+            "recusa_por_limiar": false,
+            "latencia_s": 25.887,
+            "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+          }
+        },
+        {
+          "pergunta": "Como faço para renovar minha CNH?",
+          "latencias_s": [
+            0.015,
+            0.015,
+            0.013
+          ],
+          "latencia_mediana_s": 0.014,
+          "saidas_identicas_nas_3": true,
+          "resposta_api": {
+            "saida": {
+              "resposta": "Não consta na base de conhecimento da ZelaCidade. Para esse assunto, consulte os canais oficiais da Prefeitura (SP156).",
+              "categoria": "fora_do_escopo",
+              "risco": "nao_se_aplica",
+              "fontes": [],
+              "recusou": true
+            },
+            "fontes_detalhadas": [],
+            "config": "C",
+            "recusa_por_limiar": true,
+            "latencia_s": 0.015,
+            "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+          }
+        }
+      ]
+    }
+  ],
+  "observacao_cpu": "RAM livre durante a medicao em CPU: 0,91-1,26 GB de 15,9 GB; leitura de paginas = 0 em 43 de 54 amostras (picos no carregamento do modelo); variacao entre as chamadas 2 e 3 < 1%.",
+  "exemplo_readme": {
+    "dispositivo": "GPU NVIDIA GeForce RTX 5060 Ti 8 GB (bfloat16)",
+    "nota": "Chamada unica, a primeira apos subir a API (latencia inclui aquecimento). Pergunta Q16 do conjunto de teste.",
+    "pergunta": "Qual a largura mínima que deve ficar livre para os pedestres numa calçada em São Paulo?",
+    "resposta_api": {
+      "saida": {
+        "resposta": "A faixa livre é a parte da calçada destinada exclusivamente à circulação de pedestres. Ela deve ter no mínimo 1,20 m de largura, inclinação transversal de no máximo 3% e ocupar pelo menos metade da largura da calçada quando esta tiver mais de 2,40 m.",
+        "categoria": "calcada",
+        "risco": "medio",
+        "fontes": [
+          "T015"
+        ],
+        "recusou": false
+      },
+      "fontes_detalhadas": [
+        {
+          "id": "T015",
+          "titulo": "Faixa livre: largura e inclinação",
+          "orgao": "Prefeitura de Sao Paulo",
+          "url": "https://saopaulo.sp.leg.br/iah/fulltext/decretos/D59671.pdf"
+        }
+      ],
+      "config": "C",
+      "recusa_por_limiar": false,
+      "latencia_s": 13.474,
+      "aviso": "Orientação informativa. A ZelaCidade não substitui os canais oficiais da Prefeitura (SP156)."
+    }
+  }
+}

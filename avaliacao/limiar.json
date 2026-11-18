@@ -1,0 +1,38 @@
+{
+  "tfidf": {
+    "limiar": 0.1288,
+    "criterio": "max acuracia balanceada no treino (mediana dos empates)",
+    "treino": {
+      "tpr": 0.926,
+      "tnr": 0.64,
+      "n_pos": 94,
+      "n_neg": 25,
+      "media_score_pos": 0.2133,
+      "media_score_neg": 0.1219
+    },
+    "teste": {
+      "recall@1": 0.725,
+      "recall@3": 0.8,
+      "respondiveis_passam": 0.85,
+      "nao_consta_barradas": 0.4
+    }
+  },
+  "e5": {
+    "limiar": 0.8511,
+    "criterio": "max acuracia balanceada no treino (mediana dos empates)",
+    "treino": {
+      "tpr": 0.947,
+      "tnr": 0.88,
+      "n_pos": 94,
+      "n_neg": 25,
+      "media_score_pos": 0.8819,
+      "media_score_neg": 0.8311
+    },
+    "teste": {
+      "recall@1": 0.825,
+      "recall@3": 1.0,
+      "respondiveis_passam": 1.0,
+      "nao_consta_barradas": 0.7
+    }
+  }
+}
