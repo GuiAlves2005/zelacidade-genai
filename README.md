@@ -11,6 +11,8 @@ do cidadão para APIs externas.
 
 📄 **Relatório técnico completo:** [`RELATORIO.md`](RELATORIO.md)
 
+🎥 **Vídeo de demonstração:** https://youtu.be/cUMB1Jk7_Eg
+
 ## Integrantes
 
 | Nome completo | RM |

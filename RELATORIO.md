@@ -256,4 +256,5 @@ humana do gabarito.
 
 **Links**
 - Repositório: https://github.com/GuiAlves2005/zelacidade-genai
+- Vídeo: https://youtu.be/cUMB1Jk7_Eg
 - MVP: https://app-zelacidade-gs-99431.azurewebsites.net/painel
